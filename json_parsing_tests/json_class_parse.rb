@@ -12,4 +12,12 @@ class ParseJson
     @json_file['base']
   end
 
+  def get_date_value
+    @json_file['date']
+  end
+
+  def get_rates
+    @json_file['rates']
+  end
+
 end
