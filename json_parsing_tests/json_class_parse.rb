@@ -8,4 +8,8 @@ class ParseJson
     @json_file = JSON.parse(File.read(json_file))
   end
 
+  def get_base_value
+    @json_file['base']
+  end
+
 end

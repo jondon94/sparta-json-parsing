@@ -25,7 +25,8 @@ describe 'Testing the Exchange rates' do
 
     it 'should return Euro as the base currency' do
       # Test for base currency is Euro
-      expect(@exchange_rates.json_file.first[1]).to eq('EUR')
+      # expect(@exchange_rates.json_file.['base']).to eq('EUR')
+      expect(@exchange_rates.get_base_value).to eq('EUR')
     end
 
     it 'should show todays date for current exchange rate' do
